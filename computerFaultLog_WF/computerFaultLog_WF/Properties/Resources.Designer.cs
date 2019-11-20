@@ -63,6 +63,16 @@ namespace computerFaultLog_WF.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap barack_obama_12782369_1_402 {
+            get {
+                object obj = ResourceManager.GetObject("barack-obama-12782369-1-402", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap profilePicture {
             get {
                 object obj = ResourceManager.GetObject("profilePicture", resourceCulture);

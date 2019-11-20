@@ -33,16 +33,6 @@
             this.pnlReportMenu = new System.Windows.Forms.Panel();
             this.btnLogOut = new System.Windows.Forms.Button();
             this.lblDateTime = new System.Windows.Forms.Label();
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.lblFName = new System.Windows.Forms.Label();
-            this.lblSName = new System.Windows.Forms.Label();
-            this.lblDepartment = new System.Windows.Forms.Label();
-            this.txtFName = new System.Windows.Forms.TextBox();
-            this.txtSName = new System.Windows.Forms.TextBox();
-            this.txtDepartment = new System.Windows.Forms.TextBox();
-            this.btnClear = new System.Windows.Forms.Button();
-            this.btnSubmit = new System.Windows.Forms.Button();
-            this.cboTitle = new System.Windows.Forms.ComboBox();
             this.pnlReportMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -106,126 +96,15 @@
             this.lblDateTime.Text = "Date time:";
             this.lblDateTime.Click += new System.EventHandler(this.LblDateTime_Click);
             // 
-            // lblTitle
-            // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(263, 106);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(56, 24);
-            this.lblTitle.TabIndex = 21;
-            this.lblTitle.Text = "Title:";
-            this.lblTitle.Click += new System.EventHandler(this.LblTitle_Click);
-            // 
-            // lblFName
-            // 
-            this.lblFName.AutoSize = true;
-            this.lblFName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFName.Location = new System.Drawing.Point(263, 171);
-            this.lblFName.Name = "lblFName";
-            this.lblFName.Size = new System.Drawing.Size(112, 24);
-            this.lblFName.TabIndex = 22;
-            this.lblFName.Text = "Forename:";
-            this.lblFName.Click += new System.EventHandler(this.LblFName_Click);
-            // 
-            // lblSName
-            // 
-            this.lblSName.AutoSize = true;
-            this.lblSName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSName.Location = new System.Drawing.Point(263, 231);
-            this.lblSName.Name = "lblSName";
-            this.lblSName.Size = new System.Drawing.Size(100, 24);
-            this.lblSName.TabIndex = 23;
-            this.lblSName.Text = "Surname:";
-            this.lblSName.Click += new System.EventHandler(this.LblSName_Click);
-            // 
-            // lblDepartment
-            // 
-            this.lblDepartment.AutoSize = true;
-            this.lblDepartment.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDepartment.Location = new System.Drawing.Point(263, 291);
-            this.lblDepartment.Name = "lblDepartment";
-            this.lblDepartment.Size = new System.Drawing.Size(123, 24);
-            this.lblDepartment.TabIndex = 24;
-            this.lblDepartment.Text = "Department:";
-            this.lblDepartment.Click += new System.EventHandler(this.LblDepartment_Click);
-            // 
-            // txtFName
-            // 
-            this.txtFName.Location = new System.Drawing.Point(401, 171);
-            this.txtFName.Name = "txtFName";
-            this.txtFName.Size = new System.Drawing.Size(139, 20);
-            this.txtFName.TabIndex = 26;
-            this.txtFName.Text = "Jake";
-            // 
-            // txtSName
-            // 
-            this.txtSName.Location = new System.Drawing.Point(401, 231);
-            this.txtSName.Name = "txtSName";
-            this.txtSName.Size = new System.Drawing.Size(139, 20);
-            this.txtSName.TabIndex = 27;
-            this.txtSName.Text = "Drinkwater";
-            // 
-            // txtDepartment
-            // 
-            this.txtDepartment.Location = new System.Drawing.Point(401, 291);
-            this.txtDepartment.Name = "txtDepartment";
-            this.txtDepartment.Size = new System.Drawing.Size(139, 20);
-            this.txtDepartment.TabIndex = 28;
-            this.txtDepartment.Text = "Student";
-            // 
-            // btnClear
-            // 
-            this.btnClear.Location = new System.Drawing.Point(267, 335);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(119, 41);
-            this.btnClear.TabIndex = 29;
-            this.btnClear.Text = "Clear";
-            this.btnClear.UseVisualStyleBackColor = true;
-            this.btnClear.Click += new System.EventHandler(this.BtnClear_Click);
-            // 
-            // btnSubmit
-            // 
-            this.btnSubmit.Location = new System.Drawing.Point(401, 335);
-            this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(119, 41);
-            this.btnSubmit.TabIndex = 30;
-            this.btnSubmit.Text = "Submit:";
-            this.btnSubmit.UseVisualStyleBackColor = true;
-            this.btnSubmit.Click += new System.EventHandler(this.BtnSubmit_Click);
-            // 
-            // cboTitle
-            // 
-            this.cboTitle.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboTitle.FormattingEnabled = true;
-            this.cboTitle.Items.AddRange(new object[] {
-            "Mr.",
-            "Mrs.",
-            "Ms.",
-            "Dr.",
-            "Rev."});
-            this.cboTitle.Location = new System.Drawing.Point(401, 106);
-            this.cboTitle.Name = "cboTitle";
-            this.cboTitle.Size = new System.Drawing.Size(121, 21);
-            this.cboTitle.TabIndex = 31;
-            // 
             // frmReportFault
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.cboTitle);
-            this.Controls.Add(this.btnSubmit);
-            this.Controls.Add(this.btnClear);
-            this.Controls.Add(this.txtDepartment);
-            this.Controls.Add(this.txtSName);
-            this.Controls.Add(this.txtFName);
-            this.Controls.Add(this.lblDepartment);
-            this.Controls.Add(this.lblSName);
-            this.Controls.Add(this.lblFName);
-            this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.lblDateTime);
             this.Controls.Add(this.pnlReportMenu);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmReportFault";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmReportFault";
@@ -242,15 +121,5 @@
         private System.Windows.Forms.Panel pnlReportMenu;
         private System.Windows.Forms.Button btnLogOut;
         private System.Windows.Forms.Label lblDateTime;
-        private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.Label lblFName;
-        private System.Windows.Forms.Label lblSName;
-        private System.Windows.Forms.Label lblDepartment;
-        private System.Windows.Forms.TextBox txtFName;
-        private System.Windows.Forms.TextBox txtSName;
-        private System.Windows.Forms.TextBox txtDepartment;
-        private System.Windows.Forms.Button btnClear;
-        private System.Windows.Forms.Button btnSubmit;
-        private System.Windows.Forms.ComboBox cboTitle;
     }
 }

@@ -78,26 +78,8 @@ namespace computerFaultLog_WF
 
         private void BtnClear_Click(object sender, EventArgs e)
         {
-            txtDepartment.Clear();
-            txtFName.Clear();
-            txtSName.Clear();
-        }
 
-        private void BtnSubmit_Click(object sender, EventArgs e)
-        {
-            globalVars.Title = cboTitle.Text;
-            globalVars.Forname = txtFName.Text;
-            globalVars.SureName = txtSName.Text;
-            globalVars.Department = txtDepartment.Text;
 
-            MessageBox.Show("Record Saved","Saved");
-
-            cboTitle.Enabled = false;
-            txtDepartment.Enabled = false;
-            txtFName.Enabled = false;
-            txtSName.Enabled = false;
-            btnSubmit.Enabled = false;
-            btnClear.Enabled = false;
         }
     }
 }

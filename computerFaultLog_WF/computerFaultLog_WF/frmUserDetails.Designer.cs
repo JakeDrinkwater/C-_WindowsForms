@@ -35,6 +35,18 @@
             this.lblFaultReport = new System.Windows.Forms.Label();
             this.btnReportFault = new System.Windows.Forms.Button();
             this.lblDateTime = new System.Windows.Forms.Label();
+            this.cboTitle = new System.Windows.Forms.ComboBox();
+            this.btnSubmit = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.txtDepartment = new System.Windows.Forms.TextBox();
+            this.txtSName = new System.Windows.Forms.TextBox();
+            this.txtFName = new System.Windows.Forms.TextBox();
+            this.lblDepartment = new System.Windows.Forms.Label();
+            this.lblSName = new System.Windows.Forms.Label();
+            this.lblFName = new System.Windows.Forms.Label();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.lstDetails = new System.Windows.Forms.ListBox();
+            this.btnNew = new System.Windows.Forms.Button();
             this.pnlMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -120,13 +132,147 @@
             this.lblDateTime.Text = "Date time:";
             this.lblDateTime.Click += new System.EventHandler(this.LblDateTime_Click);
             // 
+            // cboTitle
+            // 
+            this.cboTitle.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTitle.FormattingEnabled = true;
+            this.cboTitle.Items.AddRange(new object[] {
+            "Mr.",
+            "Mrs.",
+            "Ms.",
+            "Dr.",
+            "Rev."});
+            this.cboTitle.Location = new System.Drawing.Point(373, 30);
+            this.cboTitle.Name = "cboTitle";
+            this.cboTitle.Size = new System.Drawing.Size(121, 21);
+            this.cboTitle.TabIndex = 41;
+            // 
+            // btnSubmit
+            // 
+            this.btnSubmit.Location = new System.Drawing.Point(373, 259);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(119, 41);
+            this.btnSubmit.TabIndex = 40;
+            this.btnSubmit.Text = "Submit:";
+            this.btnSubmit.UseVisualStyleBackColor = true;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
+            // 
+            // btnClear
+            // 
+            this.btnClear.Location = new System.Drawing.Point(239, 259);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(119, 41);
+            this.btnClear.TabIndex = 39;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
+            // txtDepartment
+            // 
+            this.txtDepartment.Location = new System.Drawing.Point(373, 215);
+            this.txtDepartment.Name = "txtDepartment";
+            this.txtDepartment.Size = new System.Drawing.Size(139, 20);
+            this.txtDepartment.TabIndex = 38;
+            this.txtDepartment.Text = "Student";
+            // 
+            // txtSName
+            // 
+            this.txtSName.Location = new System.Drawing.Point(373, 155);
+            this.txtSName.Name = "txtSName";
+            this.txtSName.Size = new System.Drawing.Size(139, 20);
+            this.txtSName.TabIndex = 37;
+            this.txtSName.Text = "Drinkwater";
+            // 
+            // txtFName
+            // 
+            this.txtFName.Location = new System.Drawing.Point(373, 95);
+            this.txtFName.Name = "txtFName";
+            this.txtFName.Size = new System.Drawing.Size(139, 20);
+            this.txtFName.TabIndex = 36;
+            this.txtFName.Text = "Jake";
+            // 
+            // lblDepartment
+            // 
+            this.lblDepartment.AutoSize = true;
+            this.lblDepartment.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDepartment.Location = new System.Drawing.Point(235, 215);
+            this.lblDepartment.Name = "lblDepartment";
+            this.lblDepartment.Size = new System.Drawing.Size(123, 24);
+            this.lblDepartment.TabIndex = 35;
+            this.lblDepartment.Text = "Department:";
+            // 
+            // lblSName
+            // 
+            this.lblSName.AutoSize = true;
+            this.lblSName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSName.Location = new System.Drawing.Point(235, 155);
+            this.lblSName.Name = "lblSName";
+            this.lblSName.Size = new System.Drawing.Size(100, 24);
+            this.lblSName.TabIndex = 34;
+            this.lblSName.Text = "Surname:";
+            // 
+            // lblFName
+            // 
+            this.lblFName.AutoSize = true;
+            this.lblFName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFName.Location = new System.Drawing.Point(235, 95);
+            this.lblFName.Name = "lblFName";
+            this.lblFName.Size = new System.Drawing.Size(112, 24);
+            this.lblFName.TabIndex = 33;
+            this.lblFName.Text = "Forename:";
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Location = new System.Drawing.Point(235, 30);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(56, 24);
+            this.lblTitle.TabIndex = 32;
+            this.lblTitle.Text = "Title:";
+            this.lblTitle.Click += new System.EventHandler(this.lblTitle_Click);
+            // 
+            // lstDetails
+            // 
+            this.lstDetails.FormattingEnabled = true;
+            this.lstDetails.Location = new System.Drawing.Point(585, 30);
+            this.lstDetails.Name = "lstDetails";
+            this.lstDetails.Size = new System.Drawing.Size(203, 277);
+            this.lstDetails.TabIndex = 42;
+            this.lstDetails.SelectedIndexChanged += new System.EventHandler(this.lstDetails_SelectedIndexChanged);
+            // 
+            // btnNew
+            // 
+            this.btnNew.Location = new System.Drawing.Point(239, 306);
+            this.btnNew.Name = "btnNew";
+            this.btnNew.Size = new System.Drawing.Size(253, 41);
+            this.btnNew.TabIndex = 43;
+            this.btnNew.Text = "New user";
+            this.btnNew.UseVisualStyleBackColor = true;
+            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
+            // 
             // frmUserDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnNew);
+            this.Controls.Add(this.lstDetails);
+            this.Controls.Add(this.cboTitle);
+            this.Controls.Add(this.btnSubmit);
+            this.Controls.Add(this.btnClear);
+            this.Controls.Add(this.txtDepartment);
+            this.Controls.Add(this.txtSName);
+            this.Controls.Add(this.txtFName);
+            this.Controls.Add(this.lblDepartment);
+            this.Controls.Add(this.lblSName);
+            this.Controls.Add(this.lblFName);
+            this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.lblDateTime);
             this.Controls.Add(this.pnlMenu);
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmUserDetails";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMainMenu";
@@ -146,5 +292,17 @@
         private System.Windows.Forms.Label lblFaultReport;
         private System.Windows.Forms.Button btnReportFault;
         private System.Windows.Forms.Label lblDateTime;
+        private System.Windows.Forms.ComboBox cboTitle;
+        private System.Windows.Forms.Button btnSubmit;
+        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.TextBox txtDepartment;
+        private System.Windows.Forms.TextBox txtSName;
+        private System.Windows.Forms.TextBox txtFName;
+        private System.Windows.Forms.Label lblDepartment;
+        private System.Windows.Forms.Label lblSName;
+        private System.Windows.Forms.Label lblFName;
+        private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.ListBox lstDetails;
+        private System.Windows.Forms.Button btnNew;
     }
 }

@@ -35,8 +35,8 @@
             this.txtUserField = new System.Windows.Forms.TextBox();
             this.lblPassword = new System.Windows.Forms.Label();
             this.lblUserName = new System.Windows.Forms.Label();
-            this.ticUserProfile = new System.Windows.Forms.PictureBox();
             this.lblDateTime = new System.Windows.Forms.Label();
+            this.ticUserProfile = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.ticUserProfile)).BeginInit();
             this.SuspendLayout();
             // 
@@ -106,16 +106,6 @@
             this.lblUserName.TabIndex = 9;
             this.lblUserName.Text = "User name:";
             // 
-            // ticUserProfile
-            // 
-            this.ticUserProfile.BackColor = System.Drawing.Color.Transparent;
-            this.ticUserProfile.Location = new System.Drawing.Point(216, 12);
-            this.ticUserProfile.Name = "ticUserProfile";
-            this.ticUserProfile.Size = new System.Drawing.Size(207, 201);
-            this.ticUserProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ticUserProfile.TabIndex = 8;
-            this.ticUserProfile.TabStop = false;
-            // 
             // lblDateTime
             // 
             this.lblDateTime.AutoSize = true;
@@ -126,12 +116,24 @@
             this.lblDateTime.Text = "Date time:";
             this.lblDateTime.Click += new System.EventHandler(this.LblDateTime_Click);
             // 
+            // ticUserProfile
+            // 
+            this.ticUserProfile.BackColor = System.Drawing.Color.Transparent;
+            this.ticUserProfile.Image = global::computerFaultLog_WF.Properties.Resources.barack_obama_12782369_1_402;
+            this.ticUserProfile.Location = new System.Drawing.Point(216, 12);
+            this.ticUserProfile.Name = "ticUserProfile";
+            this.ticUserProfile.Size = new System.Drawing.Size(207, 201);
+            this.ticUserProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ticUserProfile.TabIndex = 8;
+            this.ticUserProfile.TabStop = false;
+            // 
             // frmLogIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(628, 450);
+            this.ControlBox = false;
             this.Controls.Add(this.lblDateTime);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnExit);
@@ -141,6 +143,7 @@
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblUserName);
             this.Controls.Add(this.ticUserProfile);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmLogIn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmLogin";

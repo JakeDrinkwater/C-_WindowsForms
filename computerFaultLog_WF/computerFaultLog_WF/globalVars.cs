@@ -9,7 +9,7 @@ namespace computerFaultLog_WF
     class globalVars
     {
         public static string Forname;
-        public static string SureName;
+        public static string Surname;
         public static string Department;
         public static string Title;
     }

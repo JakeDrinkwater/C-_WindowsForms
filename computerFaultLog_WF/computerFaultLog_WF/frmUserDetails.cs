@@ -56,5 +56,60 @@ namespace computerFaultLog_WF
             DateTime date = DateTime.Now;
             lblDateTime.Text = Convert.ToString(date);
         }
+
+        private void lblTitle_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtDepartment.Clear();
+            txtFName.Clear();
+            txtSName.Clear();
+        }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            globalVars.Title = cboTitle.Text;
+            globalVars.Forname = txtFName.Text;
+            globalVars.Surname = txtSName.Text;
+            globalVars.Department = txtDepartment.Text;
+
+            MessageBox.Show("Record Saved", "Saved");
+
+            cboTitle.Enabled = false;
+            txtDepartment.Enabled = false;
+            txtFName.Enabled = false;
+            txtSName.Enabled = false;
+            btnSubmit.Enabled = false;
+            btnClear.Enabled = false;
+
+            lstDetails.Items.Add(globalVars.Title);
+            lstDetails.Items.Add(globalVars.Forname);
+            lstDetails.Items.Add(globalVars.Surname);
+            lstDetails.Items.Add(globalVars.Department);
+        }
+
+        private void lstDetails_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnNew_Click(object sender, EventArgs e)
+        {
+            cboTitle.Enabled = true;
+            txtDepartment.Enabled = true;
+            txtFName.Enabled = true;
+            txtSName.Enabled = true;
+            btnSubmit.Enabled = true;
+            btnClear.Enabled = true;
+
+            txtDepartment.Clear();
+            txtFName.Clear();
+            txtSName.Clear();
+
+            lstDetails.Items.Add("\n");
+        }
     }
 }

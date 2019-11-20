@@ -105,5 +105,8 @@
   <ItemGroup>
     <None Include="Resources\73-734715_left-arrow-png-back-arrow-icon-android-transparent.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barack-obama-12782369-1-402.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -72,5 +72,6 @@ namespace computerFaultLog_WF
             DateTime date = DateTime.Now;
             lblDateTime.Text = Convert.ToString(date);
         }
+        
     }
 }

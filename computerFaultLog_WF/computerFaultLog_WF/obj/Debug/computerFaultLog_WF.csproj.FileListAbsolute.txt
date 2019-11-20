@@ -10,3 +10,14 @@ M:\Downloads\Unit 4 Programming\Form apps\computerFaultLog_WF\computerFaultLog_W
 M:\Downloads\Unit 4 Programming\Form apps\computerFaultLog_WF\computerFaultLog_WF\obj\Debug\computerFaultLog_WF.pdb
 M:\Downloads\Unit 4 Programming\Form apps\computerFaultLog_WF\computerFaultLog_WF\obj\Debug\computerFaultLog_WF.frmReportFault.resources
 M:\Downloads\Unit 4 Programming\Form apps\computerFaultLog_WF\computerFaultLog_WF\obj\Debug\computerFaultLog_WF.frmUserDetails.resources
+G:\Visual Studio\C-_WindowsForms\computerFaultLog_WF\computerFaultLog_WF\bin\Debug\computerFaultLog_WF.exe.config
+G:\Visual Studio\C-_WindowsForms\computerFaultLog_WF\computerFaultLog_WF\bin\Debug\computerFaultLog_WF.exe
+G:\Visual Studio\C-_WindowsForms\computerFaultLog_WF\computerFaultLog_WF\bin\Debug\computerFaultLog_WF.pdb
+G:\Visual Studio\C-_WindowsForms\computerFaultLog_WF\computerFaultLog_WF\obj\Debug\computerFaultLog_WF.csprojAssemblyReference.cache
+G:\Visual Studio\C-_WindowsForms\computerFaultLog_WF\computerFaultLog_WF\obj\Debug\computerFaultLog_WF.frmLogIn.resources
+G:\Visual Studio\C-_WindowsForms\computerFaultLog_WF\computerFaultLog_WF\obj\Debug\computerFaultLog_WF.frmUserDetails.resources
+G:\Visual Studio\C-_WindowsForms\computerFaultLog_WF\computerFaultLog_WF\obj\Debug\computerFaultLog_WF.frmReportFault.resources
+G:\Visual Studio\C-_WindowsForms\computerFaultLog_WF\computerFaultLog_WF\obj\Debug\computerFaultLog_WF.Properties.Resources.resources
+G:\Visual Studio\C-_WindowsForms\computerFaultLog_WF\computerFaultLog_WF\obj\Debug\computerFaultLog_WF.csproj.GenerateResource.cache
+G:\Visual Studio\C-_WindowsForms\computerFaultLog_WF\computerFaultLog_WF\obj\Debug\computerFaultLog_WF.exe
+G:\Visual Studio\C-_WindowsForms\computerFaultLog_WF\computerFaultLog_WF\obj\Debug\computerFaultLog_WF.pdb
