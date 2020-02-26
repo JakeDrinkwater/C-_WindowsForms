@@ -37,6 +37,7 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.lblSurname = new System.Windows.Forms.Label();
             this.lblForname = new System.Windows.Forms.Label();
+            this.lblHelp = new System.Windows.Forms.Label();
             this.grpTop.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -134,12 +135,23 @@
             this.lblForname.Text = "Forename:";
             this.lblForname.Click += new System.EventHandler(this.lblForname_Click);
             // 
+            // lblHelp
+            // 
+            this.lblHelp.AutoSize = true;
+            this.lblHelp.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHelp.Location = new System.Drawing.Point(308, 328);
+            this.lblHelp.Name = "lblHelp";
+            this.lblHelp.Size = new System.Drawing.Size(384, 19);
+            this.lblHelp.TabIndex = 18;
+            this.lblHelp.Text = "Tip: to log in, enter your name into the boxes and click enter!";
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblHelp);
             this.Controls.Add(this.grpTop);
             this.Controls.Add(this.txtSurname);
             this.Controls.Add(this.txtForname);
@@ -170,6 +182,7 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label lblSurname;
         private System.Windows.Forms.Label lblForname;
+        private System.Windows.Forms.Label lblHelp;
     }
 }
 

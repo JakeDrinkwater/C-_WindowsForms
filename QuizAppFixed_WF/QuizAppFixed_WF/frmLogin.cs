@@ -37,7 +37,7 @@ namespace QuizAppFixed_WF
             if (txtForname.Text == "" || txtSurname.Text == "") //checks if the user has input both a forename and a surname
             {
                 MessageBox.Show("Enter Details", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning); //if either/both details are not entered, displays error and increments "attampts" variable by one
-                attempts = attempts + 1;
+                attempts++;
             }
             else
             { //if user inputs correct data, global variables are assigned and the user can log in

@@ -81,5 +81,15 @@ namespace QuizAppFixed_WF
         {
 
         }
+
+        private void BtnResults_Click_1(object sender, EventArgs e) //use this for results button
+        {
+
+        }
+
+        private void ToolStripTextBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

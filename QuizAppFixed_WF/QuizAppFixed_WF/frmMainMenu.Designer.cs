@@ -36,11 +36,13 @@
             this.userToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuLogout = new System.Windows.Forms.ToolStripMenuItem();
             this.grpLeftSide = new System.Windows.Forms.GroupBox();
-            this.btnResults = new System.Windows.Forms.Button();
             this.btnStudy = new System.Windows.Forms.Button();
             this.btnQuiz = new System.Windows.Forms.Button();
             this.lnkHelpDoc = new System.Windows.Forms.LinkLabel();
             this.lblTitle = new System.Windows.Forms.Label();
+            this.btnResults = new System.Windows.Forms.Button();
+            this.lblHelp = new System.Windows.Forms.Label();
+            this.lblHelp2 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.grpLeftSide.SuspendLayout();
             this.SuspendLayout();
@@ -66,7 +68,7 @@
             this.rtbDescription.Size = new System.Drawing.Size(449, 141);
             this.rtbDescription.TabIndex = 7;
             this.rtbDescription.Text = "This is a quiz app developed by Jake Drinkwater. The purpose of this app is to te" +
-    "ach young people about programming";
+    "ach young people about a variety of different subjects\n";
             // 
             // menuStrip1
             // 
@@ -112,6 +114,8 @@
             // grpLeftSide
             // 
             this.grpLeftSide.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.grpLeftSide.Controls.Add(this.lblHelp2);
+            this.grpLeftSide.Controls.Add(this.lblHelp);
             this.grpLeftSide.Controls.Add(this.btnResults);
             this.grpLeftSide.Controls.Add(this.btnStudy);
             this.grpLeftSide.Controls.Add(this.btnQuiz);
@@ -119,23 +123,9 @@
             this.grpLeftSide.Controls.Add(this.lblTitle);
             this.grpLeftSide.Location = new System.Drawing.Point(-21, -41);
             this.grpLeftSide.Name = "grpLeftSide";
-            this.grpLeftSide.Size = new System.Drawing.Size(262, 545);
+            this.grpLeftSide.Size = new System.Drawing.Size(321, 545);
             this.grpLeftSide.TabIndex = 5;
             this.grpLeftSide.TabStop = false;
-            // 
-            // btnResults
-            // 
-            this.btnResults.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.btnResults.FlatAppearance.BorderSize = 0;
-            this.btnResults.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnResults.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnResults.Location = new System.Drawing.Point(33, 349);
-            this.btnResults.Name = "btnResults";
-            this.btnResults.Size = new System.Drawing.Size(219, 70);
-            this.btnResults.TabIndex = 4;
-            this.btnResults.Text = "Results";
-            this.btnResults.UseVisualStyleBackColor = false;
-            this.btnResults.Click += new System.EventHandler(this.btnResults_Click);
             // 
             // btnStudy
             // 
@@ -143,9 +133,9 @@
             this.btnStudy.FlatAppearance.BorderSize = 0;
             this.btnStudy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStudy.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStudy.Location = new System.Drawing.Point(33, 273);
+            this.btnStudy.Location = new System.Drawing.Point(21, 263);
             this.btnStudy.Name = "btnStudy";
-            this.btnStudy.Size = new System.Drawing.Size(219, 70);
+            this.btnStudy.Size = new System.Drawing.Size(294, 70);
             this.btnStudy.TabIndex = 3;
             this.btnStudy.Text = "Study";
             this.btnStudy.UseVisualStyleBackColor = false;
@@ -157,9 +147,9 @@
             this.btnQuiz.FlatAppearance.BorderSize = 0;
             this.btnQuiz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnQuiz.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQuiz.Location = new System.Drawing.Point(33, 197);
+            this.btnQuiz.Location = new System.Drawing.Point(21, 187);
             this.btnQuiz.Name = "btnQuiz";
-            this.btnQuiz.Size = new System.Drawing.Size(219, 70);
+            this.btnQuiz.Size = new System.Drawing.Size(294, 70);
             this.btnQuiz.TabIndex = 2;
             this.btnQuiz.Text = "Quiz";
             this.btnQuiz.UseVisualStyleBackColor = false;
@@ -181,11 +171,46 @@
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft YaHei UI", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(51, 86);
+            this.lblTitle.Location = new System.Drawing.Point(80, 119);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(182, 46);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Quiz App";
+            // 
+            // btnResults
+            // 
+            this.btnResults.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.btnResults.FlatAppearance.BorderSize = 0;
+            this.btnResults.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnResults.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnResults.Location = new System.Drawing.Point(21, 339);
+            this.btnResults.Name = "btnResults";
+            this.btnResults.Size = new System.Drawing.Size(294, 70);
+            this.btnResults.TabIndex = 5;
+            this.btnResults.Text = "Results";
+            this.btnResults.UseVisualStyleBackColor = false;
+            this.btnResults.Click += new System.EventHandler(this.BtnResults_Click_1);
+            // 
+            // lblHelp
+            // 
+            this.lblHelp.AutoSize = true;
+            this.lblHelp.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHelp.Location = new System.Drawing.Point(23, 454);
+            this.lblHelp.Name = "lblHelp";
+            this.lblHelp.Size = new System.Drawing.Size(239, 38);
+            this.lblHelp.TabIndex = 6;
+            this.lblHelp.Text = "If you\'re confused about what to do, \r\nclick on the blue link below!";
+            // 
+            // lblHelp2
+            // 
+            this.lblHelp2.AutoSize = true;
+            this.lblHelp2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.lblHelp2.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHelp2.Location = new System.Drawing.Point(69, 65);
+            this.lblHelp2.Name = "lblHelp2";
+            this.lblHelp2.Size = new System.Drawing.Size(175, 32);
+            this.lblHelp2.TabIndex = 9;
+            this.lblHelp2.Text = "^ If you want to log out or exit, \r\nclick on these!";
             // 
             // frmMainMenu
             // 
@@ -221,10 +246,12 @@
         private System.Windows.Forms.ToolStripMenuItem userToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mnuLogout;
         private System.Windows.Forms.GroupBox grpLeftSide;
-        private System.Windows.Forms.Button btnResults;
         private System.Windows.Forms.Button btnStudy;
         private System.Windows.Forms.Button btnQuiz;
         private System.Windows.Forms.LinkLabel lnkHelpDoc;
         private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.Button btnResults;
+        private System.Windows.Forms.Label lblHelp;
+        private System.Windows.Forms.Label lblHelp2;
     }
 }

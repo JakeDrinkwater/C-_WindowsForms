@@ -8,3 +8,4 @@ M:\Downloads\Unit 4 Programming\.C#_Form apps\QuizAppFixed_WF\QuizAppFixed_WF\ob
 M:\Downloads\Unit 4 Programming\.C#_Form apps\QuizAppFixed_WF\QuizAppFixed_WF\obj\Debug\QuizAppFixed_WF.csproj.GenerateResource.cache
 M:\Downloads\Unit 4 Programming\.C#_Form apps\QuizAppFixed_WF\QuizAppFixed_WF\obj\Debug\QuizAppFixed_WF.exe
 M:\Downloads\Unit 4 Programming\.C#_Form apps\QuizAppFixed_WF\QuizAppFixed_WF\obj\Debug\QuizAppFixed_WF.pdb
+M:\Downloads\Unit 4 Programming\.C#_Form apps\QuizAppFixed_WF\QuizAppFixed_WF\obj\Debug\QuizAppFixed_WF.csproj.CoreCompileInputs.cache
