@@ -51,14 +51,19 @@ namespace LoginForm_WF
 
             try
             {
+                foreach (string line in lines)
+                {
+                    string[] col = line.Split(',');
+                }
+
                 for (int a = 0; a <= 99; a++)
                 {
-                    if (txtForename.Text == lines[a])
+                    if (txtForename.Text == col[a])
                     {
                         forename = true;
                     }
 
-                    if (txtSurname.Text == lines[a])
+                    if (txtSurname.Text == col[a])
                     {
                         surname = true;
                     }
