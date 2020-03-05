@@ -41,11 +41,18 @@ namespace LoginForm_WF
         }
         private void btnEnter_Click(object sender, EventArgs e)
         {
-            string UserName = GlobalVars.strForename + GlobalVars.strSurname + ",";
+            string UserName= GlobalVars.strForename + "\n" + GlobalVars.strSurname;
 
-            StreamWriter writer = new StreamWriter("C:/Users/Jake/Desktop/LoginForm_WF/Users.txt");
+            StreamWriter writer = new StreamWriter("C:/Users/dri40079303/Desktop/Unit 4 Programming/C-_WindowsForms-master/LoginForm_WF/LoginForm_WF/Users.txt");
             writer.WriteLine(UserName);
             writer.Close();
+
+            MessageBox.Show("New user created", "Success");
+
+            frmMainMenu main = new frmMainMenu();
+            this.Hide();
+            main.Show();
+
         }
 
         private void lblTitle_Click(object sender, EventArgs e)

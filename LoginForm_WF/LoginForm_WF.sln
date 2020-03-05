@@ -6,9 +6,6 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginForm_WF", "LoginForm_WF\LoginForm_WF.csproj", "{FC807498-E380-4143-9B89-59EDB21FBA94}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BE1D23D0-1145-4C7E-A25E-302F07B49834}"
-	ProjectSection(SolutionItems) = preProject
-		Users.txt = Users.txt
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

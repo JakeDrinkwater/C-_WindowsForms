@@ -9,3 +9,14 @@ C:\Users\Jake\Desktop\LoginForm_WF\LoginForm_WF\obj\Debug\LoginForm_WF.exe
 C:\Users\Jake\Desktop\LoginForm_WF\LoginForm_WF\obj\Debug\LoginForm_WF.pdb
 C:\Users\Jake\Desktop\LoginForm_WF\LoginForm_WF\obj\Debug\LoginForm_WF.frmExistingUser.resources
 C:\Users\Jake\Desktop\LoginForm_WF\LoginForm_WF\obj\Debug\LoginForm_WF.frmNewUser.resources
+C:\Users\dri40079303\Desktop\Unit 4 Programming\C-_WindowsForms-master\LoginForm_WF\LoginForm_WF\bin\Debug\LoginForm_WF.exe.config
+C:\Users\dri40079303\Desktop\Unit 4 Programming\C-_WindowsForms-master\LoginForm_WF\LoginForm_WF\bin\Debug\LoginForm_WF.exe
+C:\Users\dri40079303\Desktop\Unit 4 Programming\C-_WindowsForms-master\LoginForm_WF\LoginForm_WF\bin\Debug\LoginForm_WF.pdb
+C:\Users\dri40079303\Desktop\Unit 4 Programming\C-_WindowsForms-master\LoginForm_WF\LoginForm_WF\obj\Debug\LoginForm_WF.csprojAssemblyReference.cache
+C:\Users\dri40079303\Desktop\Unit 4 Programming\C-_WindowsForms-master\LoginForm_WF\LoginForm_WF\obj\Debug\LoginForm_WF.frmExistingUser.resources
+C:\Users\dri40079303\Desktop\Unit 4 Programming\C-_WindowsForms-master\LoginForm_WF\LoginForm_WF\obj\Debug\LoginForm_WF.frmMainMenu.resources
+C:\Users\dri40079303\Desktop\Unit 4 Programming\C-_WindowsForms-master\LoginForm_WF\LoginForm_WF\obj\Debug\LoginForm_WF.frmNewUser.resources
+C:\Users\dri40079303\Desktop\Unit 4 Programming\C-_WindowsForms-master\LoginForm_WF\LoginForm_WF\obj\Debug\LoginForm_WF.Properties.Resources.resources
+C:\Users\dri40079303\Desktop\Unit 4 Programming\C-_WindowsForms-master\LoginForm_WF\LoginForm_WF\obj\Debug\LoginForm_WF.csproj.GenerateResource.cache
+C:\Users\dri40079303\Desktop\Unit 4 Programming\C-_WindowsForms-master\LoginForm_WF\LoginForm_WF\obj\Debug\LoginForm_WF.exe
+C:\Users\dri40079303\Desktop\Unit 4 Programming\C-_WindowsForms-master\LoginForm_WF\LoginForm_WF\obj\Debug\LoginForm_WF.pdb

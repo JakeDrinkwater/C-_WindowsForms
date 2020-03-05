@@ -40,6 +40,46 @@ namespace LoginForm_WF
             Main.Show();
         }
 
+        private void btnEnter_Click(object sender, EventArgs e)
+        {
+            bool forename = false;
+            bool surname = false;
+
+
+            // Read a text file line by line.  
+            string[] lines = File.ReadAllLines("C:/Users/dri40079303/Desktop/Unit 4 Programming/C-_WindowsForms-master/LoginForm_WF/LoginForm_WF/Users.txt");
+
+            try
+            {
+                for (int a = 0; a <= 99; a++)
+                {
+                    if (txtForename.Text == lines[a])
+                    {
+                        forename = true;
+                    }
+
+                    if (txtSurname.Text == lines[a])
+                    {
+                        surname = true;
+                    }
+                }
+
+                if ((surname = true) && (forename = true))
+                {
+                    frmMainMenu main = new frmMainMenu();
+                    this.Hide();
+                    main.Show();
+                }
+            }
+            catch
+            {
+                MessageBox.Show("login not recognised", "error");
+            }
+            /*
+            foreach (string line in lines) //debug function
+                txtTest.Text = line;
+           */
+        }
 
     }
 }
