@@ -13,7 +13,10 @@ namespace QuizAppFixed_WF
         public static string strSurname; //these variables store users first and second name respectively in strings
 
         public static int intTotal; //keeps track of the total questions answered \
-        public static int intCorrectAnswers; //tracks total correct answers        using int datatype
+        public static int intCorrectAnswers; //tracks total correct answers        using integer datatype
         public static int intIncorrectAnswers; //tracks total incorrect answers   /
+
+        public static int intComponentsCorrect;
+        public static int intComponentsIncorrect; //variables for the correct and incorrect scores
     }
 }

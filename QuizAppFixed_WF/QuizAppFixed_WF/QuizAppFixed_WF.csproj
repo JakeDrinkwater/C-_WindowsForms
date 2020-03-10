@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmLevel1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLevel1.Designer.cs">
+      <DependentUpon>frmLevel1.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,14 +64,44 @@
     <Compile Include="frmMainMenu.Designer.cs">
       <DependentUpon>frmMainMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmQuiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuiz.Designer.cs">
+      <DependentUpon>frmQuiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmResults.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmResults.Designer.cs">
+      <DependentUpon>frmResults.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStudy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStudy.Designer.cs">
+      <DependentUpon>frmStudy.cs</DependentUpon>
+    </Compile>
     <Compile Include="GlobalVars.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmLevel1.resx">
+      <DependentUpon>frmLevel1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMainMenu.resx">
       <DependentUpon>frmMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuiz.resx">
+      <DependentUpon>frmQuiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmResults.resx">
+      <DependentUpon>frmResults.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStudy.resx">
+      <DependentUpon>frmStudy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -75,6 +111,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -88,6 +125,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CPU.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Floppy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RAM.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\USB.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HDD.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

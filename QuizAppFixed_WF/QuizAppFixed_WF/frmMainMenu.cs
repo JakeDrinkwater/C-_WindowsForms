@@ -54,13 +54,10 @@ namespace QuizAppFixed_WF
 
         private void lnkHelpDoc_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            
-            string FilePath;//code opens the help file whenever the "User Guide" button is pressed
+            string FilePath;
 
             FilePath = System.IO.Path.GetFullPath(Application.StartupPath + @"\..\..\Resources\Help\");
-            Process.Start(FilePath + "Help.pdf");
 
-           
         }
         private void lblName_Click(object sender, EventArgs e)
         {
@@ -75,7 +72,9 @@ namespace QuizAppFixed_WF
 
         private void btnQuiz_Click(object sender, EventArgs e)
         {
-
+            frmLevel1 lvl1 = new frmLevel1();
+            this.Hide();
+            lvl1.Show();
         }
 
         private void btnResults_Click(object sender, EventArgs e)
