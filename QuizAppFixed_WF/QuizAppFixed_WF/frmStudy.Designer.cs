@@ -43,29 +43,29 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.tabStudy = new System.Windows.Forms.TabControl();
             this.ICT = new System.Windows.Forms.TabPage();
-            this.Art = new System.Windows.Forms.TabPage();
-            this.ptcCPU = new System.Windows.Forms.PictureBox();
-            this.ptcFan = new System.Windows.Forms.PictureBox();
-            this.ptcFloppy = new System.Windows.Forms.PictureBox();
-            this.ptcHDD = new System.Windows.Forms.PictureBox();
-            this.ptcRAM = new System.Windows.Forms.PictureBox();
-            this.ptcUSB = new System.Windows.Forms.PictureBox();
-            this.lblCPU = new System.Windows.Forms.Label();
-            this.lblFan = new System.Windows.Forms.Label();
-            this.lblFloppy = new System.Windows.Forms.Label();
-            this.lblHDD = new System.Windows.Forms.Label();
-            this.lblRAM = new System.Windows.Forms.Label();
             this.lblUSB = new System.Windows.Forms.Label();
+            this.lblRAM = new System.Windows.Forms.Label();
+            this.lblHDD = new System.Windows.Forms.Label();
+            this.lblFloppy = new System.Windows.Forms.Label();
+            this.lblFan = new System.Windows.Forms.Label();
+            this.lblCPU = new System.Windows.Forms.Label();
+            this.ptcUSB = new System.Windows.Forms.PictureBox();
+            this.ptcRAM = new System.Windows.Forms.PictureBox();
+            this.ptcHDD = new System.Windows.Forms.PictureBox();
+            this.ptcFloppy = new System.Windows.Forms.PictureBox();
+            this.ptcFan = new System.Windows.Forms.PictureBox();
+            this.ptcCPU = new System.Windows.Forms.PictureBox();
+            this.Art = new System.Windows.Forms.TabPage();
             this.menuStrip1.SuspendLayout();
             this.grpLeftSide.SuspendLayout();
             this.tabStudy.SuspendLayout();
             this.ICT.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptcCPU)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptcFan)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptcFloppy)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptcHDD)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptcRAM)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptcUSB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptcRAM)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptcHDD)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptcFloppy)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptcFan)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptcCPU)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -90,8 +90,9 @@
             // mnuExitButton
             // 
             this.mnuExitButton.Name = "mnuExitButton";
-            this.mnuExitButton.Size = new System.Drawing.Size(93, 22);
+            this.mnuExitButton.Size = new System.Drawing.Size(180, 22);
             this.mnuExitButton.Text = "Exit";
+            this.mnuExitButton.Click += new System.EventHandler(this.MnuExitButton_Click);
             // 
             // userToolStripMenuItem
             // 
@@ -104,8 +105,9 @@
             // mnuLogout
             // 
             this.mnuLogout.Name = "mnuLogout";
-            this.mnuLogout.Size = new System.Drawing.Size(115, 22);
+            this.mnuLogout.Size = new System.Drawing.Size(180, 22);
             this.mnuLogout.Text = "Log out";
+            this.mnuLogout.Click += new System.EventHandler(this.MnuLogout_Click);
             // 
             // grpLeftSide
             // 
@@ -138,7 +140,7 @@
             // 
             this.lblHelp.AutoSize = true;
             this.lblHelp.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHelp.Location = new System.Drawing.Point(18, 501);
+            this.lblHelp.Location = new System.Drawing.Point(18, 534);
             this.lblHelp.Name = "lblHelp";
             this.lblHelp.Size = new System.Drawing.Size(239, 38);
             this.lblHelp.TabIndex = 6;
@@ -156,6 +158,7 @@
             this.btnResults.TabIndex = 5;
             this.btnResults.Text = "Results";
             this.btnResults.UseVisualStyleBackColor = false;
+            this.btnResults.Click += new System.EventHandler(this.BtnResults_Click);
             // 
             // btnStudy
             // 
@@ -188,7 +191,7 @@
             // 
             this.lnkHelpDoc.AutoSize = true;
             this.lnkHelpDoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lnkHelpDoc.Location = new System.Drawing.Point(31, 555);
+            this.lnkHelpDoc.Location = new System.Drawing.Point(31, 588);
             this.lnkHelpDoc.Name = "lnkHelpDoc";
             this.lnkHelpDoc.Size = new System.Drawing.Size(130, 25);
             this.lnkHelpDoc.TabIndex = 1;
@@ -204,6 +207,7 @@
             this.lblTitle.Size = new System.Drawing.Size(182, 46);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Quiz App";
+            this.lblTitle.Click += new System.EventHandler(this.LblTitle_Click);
             // 
             // tabStudy
             // 
@@ -240,36 +244,95 @@
             this.ICT.UseVisualStyleBackColor = true;
             this.ICT.Click += new System.EventHandler(this.tabPage1_Click);
             // 
-            // Art
+            // lblUSB
             // 
-            this.Art.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Art.Location = new System.Drawing.Point(4, 37);
-            this.Art.Name = "Art";
-            this.Art.Padding = new System.Windows.Forms.Padding(3);
-            this.Art.Size = new System.Drawing.Size(606, 497);
-            this.Art.TabIndex = 1;
-            this.Art.Text = "Art";
-            this.Art.UseVisualStyleBackColor = true;
+            this.lblUSB.AutoSize = true;
+            this.lblUSB.Font = new System.Drawing.Font("Microsoft YaHei UI", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUSB.Location = new System.Drawing.Point(326, 369);
+            this.lblUSB.Name = "lblUSB";
+            this.lblUSB.Size = new System.Drawing.Size(108, 39);
+            this.lblUSB.TabIndex = 11;
+            this.lblUSB.Text = "USB =";
             // 
-            // ptcCPU
+            // lblRAM
             // 
-            this.ptcCPU.Image = global::QuizAppFixed_WF.Properties.Resources.CPU;
-            this.ptcCPU.Location = new System.Drawing.Point(156, 6);
-            this.ptcCPU.Name = "ptcCPU";
-            this.ptcCPU.Size = new System.Drawing.Size(142, 149);
-            this.ptcCPU.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.ptcCPU.TabIndex = 0;
-            this.ptcCPU.TabStop = false;
+            this.lblRAM.AutoSize = true;
+            this.lblRAM.Font = new System.Drawing.Font("Microsoft YaHei UI", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRAM.Location = new System.Drawing.Point(13, 369);
+            this.lblRAM.Name = "lblRAM";
+            this.lblRAM.Size = new System.Drawing.Size(120, 39);
+            this.lblRAM.TabIndex = 10;
+            this.lblRAM.Text = "RAM =";
             // 
-            // ptcFan
+            // lblHDD
             // 
-            this.ptcFan.Image = global::QuizAppFixed_WF.Properties.Resources.Fan;
-            this.ptcFan.Location = new System.Drawing.Point(457, 6);
-            this.ptcFan.Name = "ptcFan";
-            this.ptcFan.Size = new System.Drawing.Size(149, 149);
-            this.ptcFan.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.ptcFan.TabIndex = 1;
-            this.ptcFan.TabStop = false;
+            this.lblHDD.AutoSize = true;
+            this.lblHDD.Font = new System.Drawing.Font("Microsoft YaHei UI", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHDD.Location = new System.Drawing.Point(326, 206);
+            this.lblHDD.Name = "lblHDD";
+            this.lblHDD.Size = new System.Drawing.Size(118, 39);
+            this.lblHDD.TabIndex = 9;
+            this.lblHDD.Text = "HDD =";
+            // 
+            // lblFloppy
+            // 
+            this.lblFloppy.AutoSize = true;
+            this.lblFloppy.Font = new System.Drawing.Font("Microsoft YaHei UI", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFloppy.Location = new System.Drawing.Point(3, 206);
+            this.lblFloppy.Name = "lblFloppy";
+            this.lblFloppy.Size = new System.Drawing.Size(147, 39);
+            this.lblFloppy.TabIndex = 8;
+            this.lblFloppy.Text = "Floppy =";
+            // 
+            // lblFan
+            // 
+            this.lblFan.AutoSize = true;
+            this.lblFan.Font = new System.Drawing.Font("Microsoft YaHei UI", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFan.Location = new System.Drawing.Point(326, 56);
+            this.lblFan.Name = "lblFan";
+            this.lblFan.Size = new System.Drawing.Size(100, 39);
+            this.lblFan.TabIndex = 7;
+            this.lblFan.Text = "Fan =";
+            // 
+            // lblCPU
+            // 
+            this.lblCPU.AutoSize = true;
+            this.lblCPU.Font = new System.Drawing.Font("Microsoft YaHei UI", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCPU.Location = new System.Drawing.Point(13, 56);
+            this.lblCPU.Name = "lblCPU";
+            this.lblCPU.Size = new System.Drawing.Size(110, 39);
+            this.lblCPU.TabIndex = 6;
+            this.lblCPU.Text = "CPU =";
+            // 
+            // ptcUSB
+            // 
+            this.ptcUSB.Image = global::QuizAppFixed_WF.Properties.Resources.USB;
+            this.ptcUSB.Location = new System.Drawing.Point(457, 302);
+            this.ptcUSB.Name = "ptcUSB";
+            this.ptcUSB.Size = new System.Drawing.Size(142, 164);
+            this.ptcUSB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.ptcUSB.TabIndex = 5;
+            this.ptcUSB.TabStop = false;
+            // 
+            // ptcRAM
+            // 
+            this.ptcRAM.Image = global::QuizAppFixed_WF.Properties.Resources.RAM;
+            this.ptcRAM.Location = new System.Drawing.Point(156, 302);
+            this.ptcRAM.Name = "ptcRAM";
+            this.ptcRAM.Size = new System.Drawing.Size(142, 164);
+            this.ptcRAM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.ptcRAM.TabIndex = 4;
+            this.ptcRAM.TabStop = false;
+            // 
+            // ptcHDD
+            // 
+            this.ptcHDD.Image = global::QuizAppFixed_WF.Properties.Resources.HDD;
+            this.ptcHDD.Location = new System.Drawing.Point(457, 155);
+            this.ptcHDD.Name = "ptcHDD";
+            this.ptcHDD.Size = new System.Drawing.Size(149, 149);
+            this.ptcHDD.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.ptcHDD.TabIndex = 3;
+            this.ptcHDD.TabStop = false;
             // 
             // ptcFloppy
             // 
@@ -282,95 +345,36 @@
             this.ptcFloppy.TabStop = false;
             this.ptcFloppy.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
-            // ptcHDD
+            // ptcFan
             // 
-            this.ptcHDD.Image = global::QuizAppFixed_WF.Properties.Resources.HDD;
-            this.ptcHDD.Location = new System.Drawing.Point(457, 155);
-            this.ptcHDD.Name = "ptcHDD";
-            this.ptcHDD.Size = new System.Drawing.Size(149, 149);
-            this.ptcHDD.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.ptcHDD.TabIndex = 3;
-            this.ptcHDD.TabStop = false;
+            this.ptcFan.Image = global::QuizAppFixed_WF.Properties.Resources.Fan;
+            this.ptcFan.Location = new System.Drawing.Point(457, 6);
+            this.ptcFan.Name = "ptcFan";
+            this.ptcFan.Size = new System.Drawing.Size(149, 149);
+            this.ptcFan.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.ptcFan.TabIndex = 1;
+            this.ptcFan.TabStop = false;
             // 
-            // ptcRAM
+            // ptcCPU
             // 
-            this.ptcRAM.Image = global::QuizAppFixed_WF.Properties.Resources.RAM;
-            this.ptcRAM.Location = new System.Drawing.Point(156, 302);
-            this.ptcRAM.Name = "ptcRAM";
-            this.ptcRAM.Size = new System.Drawing.Size(142, 164);
-            this.ptcRAM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.ptcRAM.TabIndex = 4;
-            this.ptcRAM.TabStop = false;
+            this.ptcCPU.Image = global::QuizAppFixed_WF.Properties.Resources.CPU;
+            this.ptcCPU.Location = new System.Drawing.Point(156, 6);
+            this.ptcCPU.Name = "ptcCPU";
+            this.ptcCPU.Size = new System.Drawing.Size(142, 149);
+            this.ptcCPU.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.ptcCPU.TabIndex = 0;
+            this.ptcCPU.TabStop = false;
             // 
-            // ptcUSB
+            // Art
             // 
-            this.ptcUSB.Image = global::QuizAppFixed_WF.Properties.Resources.USB;
-            this.ptcUSB.Location = new System.Drawing.Point(457, 302);
-            this.ptcUSB.Name = "ptcUSB";
-            this.ptcUSB.Size = new System.Drawing.Size(142, 164);
-            this.ptcUSB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.ptcUSB.TabIndex = 5;
-            this.ptcUSB.TabStop = false;
-            // 
-            // lblCPU
-            // 
-            this.lblCPU.AutoSize = true;
-            this.lblCPU.Font = new System.Drawing.Font("Microsoft YaHei UI", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCPU.Location = new System.Drawing.Point(13, 56);
-            this.lblCPU.Name = "lblCPU";
-            this.lblCPU.Size = new System.Drawing.Size(110, 39);
-            this.lblCPU.TabIndex = 6;
-            this.lblCPU.Text = "CPU =";
-            // 
-            // lblFan
-            // 
-            this.lblFan.AutoSize = true;
-            this.lblFan.Font = new System.Drawing.Font("Microsoft YaHei UI", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFan.Location = new System.Drawing.Point(326, 56);
-            this.lblFan.Name = "lblFan";
-            this.lblFan.Size = new System.Drawing.Size(100, 39);
-            this.lblFan.TabIndex = 7;
-            this.lblFan.Text = "Fan =";
-            // 
-            // lblFloppy
-            // 
-            this.lblFloppy.AutoSize = true;
-            this.lblFloppy.Font = new System.Drawing.Font("Microsoft YaHei UI", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFloppy.Location = new System.Drawing.Point(3, 206);
-            this.lblFloppy.Name = "lblFloppy";
-            this.lblFloppy.Size = new System.Drawing.Size(147, 39);
-            this.lblFloppy.TabIndex = 8;
-            this.lblFloppy.Text = "Floppy =";
-            // 
-            // lblHDD
-            // 
-            this.lblHDD.AutoSize = true;
-            this.lblHDD.Font = new System.Drawing.Font("Microsoft YaHei UI", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHDD.Location = new System.Drawing.Point(326, 206);
-            this.lblHDD.Name = "lblHDD";
-            this.lblHDD.Size = new System.Drawing.Size(118, 39);
-            this.lblHDD.TabIndex = 9;
-            this.lblHDD.Text = "HDD =";
-            // 
-            // lblRAM
-            // 
-            this.lblRAM.AutoSize = true;
-            this.lblRAM.Font = new System.Drawing.Font("Microsoft YaHei UI", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRAM.Location = new System.Drawing.Point(13, 369);
-            this.lblRAM.Name = "lblRAM";
-            this.lblRAM.Size = new System.Drawing.Size(120, 39);
-            this.lblRAM.TabIndex = 10;
-            this.lblRAM.Text = "RAM =";
-            // 
-            // lblUSB
-            // 
-            this.lblUSB.AutoSize = true;
-            this.lblUSB.Font = new System.Drawing.Font("Microsoft YaHei UI", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUSB.Location = new System.Drawing.Point(326, 369);
-            this.lblUSB.Name = "lblUSB";
-            this.lblUSB.Size = new System.Drawing.Size(108, 39);
-            this.lblUSB.TabIndex = 11;
-            this.lblUSB.Text = "USB =";
+            this.Art.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Art.Location = new System.Drawing.Point(4, 37);
+            this.Art.Name = "Art";
+            this.Art.Padding = new System.Windows.Forms.Padding(3);
+            this.Art.Size = new System.Drawing.Size(606, 497);
+            this.Art.TabIndex = 1;
+            this.Art.Text = "Art";
+            this.Art.UseVisualStyleBackColor = true;
             // 
             // frmStudy
             // 
@@ -391,12 +395,12 @@
             this.tabStudy.ResumeLayout(false);
             this.ICT.ResumeLayout(false);
             this.ICT.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptcCPU)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptcFan)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptcFloppy)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptcHDD)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptcRAM)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptcUSB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptcRAM)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptcHDD)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptcFloppy)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptcFan)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptcCPU)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

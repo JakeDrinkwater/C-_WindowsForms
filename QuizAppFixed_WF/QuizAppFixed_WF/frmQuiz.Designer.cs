@@ -67,7 +67,7 @@
             // mnuExitButton
             // 
             this.mnuExitButton.Name = "mnuExitButton";
-            this.mnuExitButton.Size = new System.Drawing.Size(180, 22);
+            this.mnuExitButton.Size = new System.Drawing.Size(92, 22);
             this.mnuExitButton.Text = "Exit";
             this.mnuExitButton.Click += new System.EventHandler(this.mnuExitButton_Click);
             // 
@@ -82,7 +82,7 @@
             // mnuLogout
             // 
             this.mnuLogout.Name = "mnuLogout";
-            this.mnuLogout.Size = new System.Drawing.Size(180, 22);
+            this.mnuLogout.Size = new System.Drawing.Size(115, 22);
             this.mnuLogout.Text = "Log out";
             this.mnuLogout.Click += new System.EventHandler(this.mnuLogout_Click);
             // 
@@ -135,6 +135,7 @@
             this.btnResults.TabIndex = 5;
             this.btnResults.Text = "Results";
             this.btnResults.UseVisualStyleBackColor = false;
+            this.btnResults.Click += new System.EventHandler(this.BtnResults_Click);
             // 
             // btnStudy
             // 
@@ -148,6 +149,7 @@
             this.btnStudy.TabIndex = 3;
             this.btnStudy.Text = "Study";
             this.btnStudy.UseVisualStyleBackColor = false;
+            this.btnStudy.Click += new System.EventHandler(this.BtnStudy_Click);
             // 
             // btnQuiz
             // 
@@ -182,6 +184,7 @@
             this.lblTitle.Size = new System.Drawing.Size(182, 46);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Quiz App";
+            this.lblTitle.Click += new System.EventHandler(this.LblTitle_Click);
             // 
             // frmQuiz
             // 

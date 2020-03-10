@@ -66,13 +66,15 @@ namespace QuizAppFixed_WF
 
         private void btnStudy_Click(object sender, EventArgs e)
         {
-
+            frmStudy stud = new frmStudy(); //opens the study form when clicked
+            this.Hide();
+            stud.Show();
         }
 
 
         private void btnQuiz_Click(object sender, EventArgs e)
         {
-            frmLevel1 lvl1 = new frmLevel1();
+            frmQuiz lvl1 = new frmQuiz(); //opens the quiz from 
             this.Hide();
             lvl1.Show();
         }
@@ -84,7 +86,9 @@ namespace QuizAppFixed_WF
 
         private void BtnResults_Click_1(object sender, EventArgs e) //use this for results button
         {
-
+            frmResults res = new frmResults();
+            this.Hide();
+            res.Show();
         }
 
         private void ToolStripTextBox1_Click(object sender, EventArgs e)

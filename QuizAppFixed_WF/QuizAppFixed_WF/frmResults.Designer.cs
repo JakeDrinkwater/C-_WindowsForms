@@ -67,7 +67,7 @@
             // mnuExitButton
             // 
             this.mnuExitButton.Name = "mnuExitButton";
-            this.mnuExitButton.Size = new System.Drawing.Size(93, 22);
+            this.mnuExitButton.Size = new System.Drawing.Size(92, 22);
             this.mnuExitButton.Text = "Exit";
             // 
             // userToolStripMenuItem
@@ -147,6 +147,7 @@
             this.btnStudy.TabIndex = 3;
             this.btnStudy.Text = "Study";
             this.btnStudy.UseVisualStyleBackColor = false;
+            this.btnStudy.Click += new System.EventHandler(this.BtnStudy_Click);
             // 
             // btnQuiz
             // 
@@ -160,6 +161,7 @@
             this.btnQuiz.TabIndex = 2;
             this.btnQuiz.Text = "Quiz";
             this.btnQuiz.UseVisualStyleBackColor = false;
+            this.btnQuiz.Click += new System.EventHandler(this.BtnQuiz_Click);
             // 
             // lnkHelpDoc
             // 

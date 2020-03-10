@@ -301,11 +301,36 @@ namespace QuizAppFixed_WF
             lblIncorrectCount.Text = Convert.ToString(GlobalVars.intComponentsIncorrect); //displays incorrect score on label
         }
 
-       
+        private void btnMainMenu_Click_1(object sender, EventArgs e)
+        {
+            DialogResult exitConfirm = new DialogResult();
 
- 
+            exitConfirm = MessageBox.Show("Are you sure?", "Confirm",MessageBoxButtons.YesNo,MessageBoxIcon.Warning);
 
- #region shhhhhhhh
+            if (exitConfirm == DialogResult.Yes)
+            {
+                frmMainMenu main = new frmMainMenu();
+                this.Hide();
+                main.Show();
+            }
+           
+        }
+
+        private void BtnStudy_Click(object sender, EventArgs e)
+        {
+            frmStudy stud = new frmStudy();
+            this.Hide();
+            stud.Show();
+        }
+
+        private void BtnResults_Click(object sender, EventArgs e)
+        {
+            frmResults res = new frmResults();
+            this.Hide();
+            res.Show();
+        }
+
+#region shhhhhhhh
         private void lblUSB_Drop_Click_1(object sender, EventArgs e)
         {
 
@@ -343,20 +368,5 @@ namespace QuizAppFixed_WF
 
 
         #endregion
-
-        private void btnMainMenu_Click_1(object sender, EventArgs e)
-        {
-            DialogResult exitConfirm = new DialogResult();
-
-            exitConfirm = MessageBox.Show("Are you sure?", "Confirm",MessageBoxButtons.YesNo,MessageBoxIcon.Warning);
-
-            if (exitConfirm == DialogResult.Yes)
-            {
-                frmMainMenu main = new frmMainMenu();
-                this.Hide();
-                main.Show();
-            }
-           
-        }
     }
 }

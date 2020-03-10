@@ -26,5 +26,26 @@ namespace QuizAppFixed_WF
         {
 
         }
+
+        private void LblTitle_Click(object sender, EventArgs e)
+        {
+            frmMainMenu main = new frmMainMenu();
+            this.Hide();
+            main.Show();
+        }
+
+        private void BtnStudy_Click(object sender, EventArgs e)
+        {
+            frmStudy stud = new frmStudy();
+            this.Hide(); 
+            stud.Show();
+        }
+
+        private void BtnResults_Click(object sender, EventArgs e)
+        {
+            frmResults res = new frmResults();
+            this.Hide();
+            res.Show();
+        }
     }
 }
