@@ -16,7 +16,7 @@ namespace QuizAppFixed_WF
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMainMenu());
+            Application.Run(new frm01Login());
         }
     }
 }

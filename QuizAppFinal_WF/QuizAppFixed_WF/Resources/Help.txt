@@ -1,1 +1,77 @@
-Help Document
+
+>>>>>!!!!!DO NOT ATTEMPT TO EDIT THIS DOCUMENT!!!!!<<<<<
+
+///Welcome to the help document for the Early Learning quiz Application!//////
+
+This program is designed to help young people to learn about 2 different subjects, ICT 
+and art.
+	
+//////////////////////////////////////////////////////////////////////////
+To see all information in this document, scroll down!																	 	
+//////////////////////////////////////////////////////////////////////////
+
+The program contains seven (7) different sections:
+{
+>Login
+>Main Menu
+>Study
+>Results
+>Quiz 
+>Quiz level 1 (ICT)
+>Quiz level 2 (Art)
+}
+
+//////////////////////////////////////////////////////////////////////////
+
+///All screens (except login)///
+Whenever you are in any of the screens apart from the log in screen, the top left
+will have 2 options, "System" and "User". If you click on the "System" button, you
+can exit the app, and in the "User" tab you can log out. The pages also contain links 
+to all other pages, except for the quiz levels. (quiz pages will only contain links to the
+Quiz section and the main menu)
+Most pages will have helpful hints if you get stuck!
+
+
+///Log in screen///
+The program will launch onto the login screen, where you must enter your first name
+and second name, or if you make a mistake you can press the "clear" button to clear 
+the boxes so you can try again! Or if you've changed your mind about having a go at
+the quizes you can press the "exit" button to close the app!
+
+
+///Main Menu///
+This screen serves as a hub for you to go back to and travel to each of the seperate
+screens, if you get lost just click on the "Quiz App" text to come back to the main 
+menu! This screen also provides a summary of the application and your name in the 
+bottom middle!
+
+
+///Study///
+The study page is a page which will help you learn about the subjects which questions
+will be asked. To learn about ICT, click on the "ICT" tab and to learn about art
+click on the "Art" tab.
+
+
+///Results///
+The results page will show you:
+>How many questions you've asked overall
+>How many answered questions you have gotten correct
+>How many you have gotten incorrect
+>Percentage correct and your score out of 12! 
+
+
+///Quiz///
+This page will show you each of the levels and lets you choose which one you want to
+have a go at! 
+Once you pick a quiz you can only go back to the main menu or quiz screens and will 
+have to confirm before you can go back, just in case you click it by accident!
+
+
+///The Quizes (Level 1 and Level 2)///
+The quizes cover the interesting topics og ICT and Art, and to answer the questions 
+you have to click on the text, hold down the click button and drag onto the matching picture!
+
+
+
+//////////////////////////////////////////////////////////////////////////
+From the makers of this application, we hope you enjoy and learn something!

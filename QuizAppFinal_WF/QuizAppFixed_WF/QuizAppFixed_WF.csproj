@@ -46,71 +46,71 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmLevel1.cs">
+    <Compile Include="frm04Level1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmLevel1.Designer.cs">
-      <DependentUpon>frmLevel1.cs</DependentUpon>
+    <Compile Include="frm04Level1.Designer.cs">
+      <DependentUpon>frm04Level1.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmLevel2.cs">
+    <Compile Include="frm05Level2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmLevel2.Designer.cs">
-      <DependentUpon>frmLevel2.cs</DependentUpon>
+    <Compile Include="frm05Level2.Designer.cs">
+      <DependentUpon>frm05Level2.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmLogin.cs">
+    <Compile Include="frm01Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmLogin.Designer.cs">
-      <DependentUpon>frmLogin.cs</DependentUpon>
+    <Compile Include="frm01Login.Designer.cs">
+      <DependentUpon>frm01Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmMainMenu.cs">
+    <Compile Include="frm02MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMainMenu.Designer.cs">
-      <DependentUpon>frmMainMenu.cs</DependentUpon>
+    <Compile Include="frm02MainMenu.Designer.cs">
+      <DependentUpon>frm02MainMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmQuiz.cs">
+    <Compile Include="frm03Quiz.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmQuiz.Designer.cs">
-      <DependentUpon>frmQuiz.cs</DependentUpon>
+    <Compile Include="frm03Quiz.Designer.cs">
+      <DependentUpon>frm03Quiz.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmResults.cs">
+    <Compile Include="frm06Results.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmResults.Designer.cs">
-      <DependentUpon>frmResults.cs</DependentUpon>
+    <Compile Include="frm06Results.Designer.cs">
+      <DependentUpon>frm06Results.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmStudy.cs">
+    <Compile Include="frm07Study.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmStudy.Designer.cs">
-      <DependentUpon>frmStudy.cs</DependentUpon>
+    <Compile Include="frm07Study.Designer.cs">
+      <DependentUpon>frm07Study.cs</DependentUpon>
     </Compile>
     <Compile Include="GlobalVars.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmLevel1.resx">
-      <DependentUpon>frmLevel1.cs</DependentUpon>
+    <EmbeddedResource Include="frm04Level1.resx">
+      <DependentUpon>frm04Level1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmLevel2.resx">
-      <DependentUpon>frmLevel2.cs</DependentUpon>
+    <EmbeddedResource Include="frm05Level2.resx">
+      <DependentUpon>frm05Level2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmLogin.resx">
-      <DependentUpon>frmLogin.cs</DependentUpon>
+    <EmbeddedResource Include="frm01Login.resx">
+      <DependentUpon>frm01Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMainMenu.resx">
-      <DependentUpon>frmMainMenu.cs</DependentUpon>
+    <EmbeddedResource Include="frm02MainMenu.resx">
+      <DependentUpon>frm02MainMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmQuiz.resx">
-      <DependentUpon>frmQuiz.cs</DependentUpon>
+    <EmbeddedResource Include="frm03Quiz.resx">
+      <DependentUpon>frm03Quiz.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmResults.resx">
-      <DependentUpon>frmResults.cs</DependentUpon>
+    <EmbeddedResource Include="frm06Results.resx">
+      <DependentUpon>frm06Results.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmStudy.resx">
-      <DependentUpon>frmStudy.cs</DependentUpon>
+    <EmbeddedResource Include="frm07Study.resx">
+      <DependentUpon>frm07Study.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
